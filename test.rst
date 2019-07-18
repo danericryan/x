@@ -97,12 +97,13 @@ H2
 -----------
 
 
-.. _`link to h3`:
-
 H3
 `````````
 
 The internal link "link to h3" should take you here.
+
+.. _`link to h3`:
+
 Some text in the H3 section.
 
 
