@@ -81,8 +81,7 @@ The internal link "internal link1" should take you here.
 H1.2
 ==============
 
-These CloudWatch alarms are defined in each AWS account for the
-name servers.
+Here is a table.
 
 +------------------------------------------+---------------+---------+
 | Column1                                  | Column2       | Column3 |
