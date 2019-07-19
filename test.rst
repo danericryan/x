@@ -110,6 +110,22 @@ Some text in the H3 section.
 H4
 '''''''''''''''
 
+Try to link to `other.rst
+<other.rst>`_
+
+Try to link to `method1`_, which is in ``methods/method1.rst``.
+
+Try to include an image:
+
+.. image:: test.jpg
+
+
+
+.. Internal links:
+
+.. _`method1`: methods/method1.rst
+
+
 .. External links:
 
 .. _`AWS Service Health Dashboard`: https://status.aws.amazon.com/
