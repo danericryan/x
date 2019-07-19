@@ -62,7 +62,7 @@ Title
 
 
 H1.1
-========
+====
 
 Some text and an ``inline literal``.
 
@@ -79,7 +79,7 @@ The internal link "internal link1" should take you here.
 #. c
 
 H1.2
-==============
+====
 
 Here is a table.
 
@@ -94,11 +94,11 @@ Here is a table.
 
 
 H2
------------
+--
 
 
 H3
-`````````
+``
 
 The internal link "link to h3" should take you here.
 
@@ -108,7 +108,7 @@ Some text in the H3 section.
 
 
 H4
-'''''''''''''''
+''
 
 Try to link to `other.rst
 <other.rst>`_

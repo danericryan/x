@@ -65,7 +65,21 @@ Here is a table.
 
 #### H3
 
-The internal link "link to h3" should take you here. Some text in the H3
-section.
+The internal link "link to h3" should take you here.
+
+<div id="link to h3">
+
+Some text in the H3 section.
+
+</div>
 
 ##### H4
+
+Try to link to [other.rst](other.rst)
+
+Try to link to [method1](methods/method1.rst), which is in
+`methods/method1.rst`.
+
+Try to include an image:
+
+![image](test.jpg)
