@@ -43,8 +43,8 @@ Title
 .. contents:: Table of Contents
    :depth: 5
 
-H1.0
-====
+Heading 1.0
+===========
 
 #. Test internal link where target is created elsewhere in
    this document: `internal link 1`_
@@ -56,7 +56,7 @@ H1.0
 
 #. Test internal link to section heading text as the target
    (without having explicitly created a target there):
-   `H4`_
+   `Heading 4`_
 
 #. Test *external* link: `AWS Service Health Dashboard`_
 
@@ -65,8 +65,8 @@ H1.0
    work?
 
 
-H1.1
-====
+Heading 1.1
+===========
 
 Some text and an ``inline literal``.
 
@@ -98,8 +98,8 @@ The internal link "internal link 1" should take you here.
 
 .. _`internal link 2`:
 
-H1.2
-====
+Heading 1.2
+===========
 
 The link "internal link 2" should take you here.
 
@@ -123,8 +123,8 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa
 qui officia deserunt mollit anim id est laborum.
 
 
-H2
---
+Heading 2
+---------
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
 sed do eiusmod tempor incididunt ut labore et dolore
@@ -135,14 +135,14 @@ voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 Excepteur sint occaecat cupidatat non proident, sunt in culpa
 qui officia deserunt mollit anim id est laborum.
 
-H3
-``
+Heading 3
+`````````
 
 Some text in the H3 section.
 
 
-H4
-''
+Heading 4
+'''''''''
 
 Try to link to another file in the same folder as this
 file: `other.rst
@@ -153,6 +153,24 @@ Try to link to `method1`_, which is in ``methods/method1.rst``.
 Try to include an image:
 
 .. image:: test.jpg
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore
+magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in
+voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore
+magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in
+voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
 sed do eiusmod tempor incididunt ut labore et dolore
