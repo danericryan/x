@@ -30,35 +30,39 @@ Title
 
     This is a note that contains more structure.
 
-    #. b1
+    #. Bullet 1
 
-       a. b1.b1
+       a. sub-bullet 1
 
-       #. b1.b2
+       #. sub-bullet 2
 
-    #. Does this internal link `internal link1`_
-       work?
-
-    #. Does this internal link to a heading `link to h3`_
-       work?
-
-    #. Does this external link `reStructuredText
-       <http://docutils.sourceforge.net/rst.html>`_
-       work?
-
-    #. Does this indirect external link `AWS Service Health Dashboard`_
-       work?
-
-       a. b3.b1
-
-          .. code::
-
-              Some code.
+    End of note admonition.
 
 
 
 .. contents:: Table of Contents
    :depth: 5
+
+H1.0
+====
+
+#. Test internal link where target is created elsewhere in
+   this document: `internal link 1`_
+
+#. Test internal link where target is created just before
+   a section heading: `internal link 2`_ (I think this doesn't
+   work because you get section targets automatically based
+   on section name.)
+
+#. Test internal link to section heading text as the target
+   (without having explicitly created a target there):
+   `H4`_
+
+#. Test *external* link: `AWS Service Health Dashboard`_
+
+#. Test external link with fold-in form `reStructuredText
+   <http://docutils.sourceforge.net/rst.html>`_
+   work?
 
 
 H1.1
@@ -66,7 +70,11 @@ H1.1
 
 Some text and an ``inline literal``.
 
-.. _`internal link1`:
+.. code::
+
+    Some code.
+
+.. _`internal link 1`:
 
 The internal link "internal link1" should take you here.
 
@@ -77,6 +85,9 @@ The internal link "internal link1" should take you here.
 #. a
 #. b
 #. c
+
+
+.. _`internal link 2`:
 
 H1.2
 ====
@@ -110,7 +121,8 @@ Some text in the H3 section.
 H4
 ''
 
-Try to link to `other.rst
+Try to link to another file in the same folder as this
+file: `other.rst
 <other.rst>`_
 
 Try to link to `method1`_, which is in ``methods/method1.rst``.
