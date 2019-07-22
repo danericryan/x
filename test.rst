@@ -76,7 +76,7 @@ Some text and an ``inline literal``.
 
 .. _`internal link 1`:
 
-The internal link "internal link1" should take you here.
+The internal link "internal link 1" should take you here.
 
 * a
 * b
@@ -91,6 +91,8 @@ The internal link "internal link1" should take you here.
 
 H1.2
 ====
+
+The link "internal link 2" should take you here.
 
 Here is a table.
 
@@ -110,10 +112,6 @@ H2
 
 H3
 ``
-
-The internal link "link to h3" should take you here.
-
-.. _`link to h3`:
 
 Some text in the H3 section.
 
