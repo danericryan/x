@@ -389,42 +389,24 @@ ul.auto-toc {
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p>This is a note that contains more structure.</p>
-<ol class="last arabic">
-<li><p class="first">b1</p>
-<ol class="loweralpha simple">
-<li>b1.b1</li>
-<li>b1.b2</li>
-</ol>
-</li>
-<li><p class="first">Does this internal link <a class="reference internal" href="#internal-link1">internal link1</a>
-work?</p>
-</li>
-<li><p class="first">Does this internal link to a heading <a class="reference internal" href="#link-to-h3">link to h3</a>
-work?</p>
-</li>
-<li><p class="first">Does this external link <a class="reference external" href="http://docutils.sourceforge.net/rst.html">reStructuredText</a>
-work?</p>
-</li>
-<li><p class="first">Does this indirect external link <a class="reference external" href="https://status.aws.amazon.com/">AWS Service Health Dashboard</a>
-work?</p>
-<ol class="loweralpha">
-<li><p class="first">b3.b1</p>
-<pre class="code literal-block">
-Some code.
-</pre>
-</li>
+<ol class="arabic simple">
+<li>Bullet 1<ol class="loweralpha">
+<li>sub-bullet 1</li>
+<li>sub-bullet 2</li>
 </ol>
 </li>
 </ol>
+<p class="last">End of note admonition.</p>
 </div>
 <div class="contents topic" id="table-of-contents">
 <p class="topic-title first">Table of Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#h1-1" id="id1">H1.1</a></li>
-<li><a class="reference internal" href="#h1-2" id="id2">H1.2</a><ul>
-<li><a class="reference internal" href="#h2" id="id3">H2</a><ul>
-<li><a class="reference internal" href="#h3" id="id4">H3</a><ul>
-<li><a class="reference internal" href="#h4" id="id5">H4</a></li>
+<li><a class="reference internal" href="#heading-1-0" id="id1">Heading 1.0</a></li>
+<li><a class="reference internal" href="#heading-1-1" id="id2">Heading 1.1</a></li>
+<li><a class="reference internal" href="#heading-1-2" id="id3">Heading 1.2</a><ul>
+<li><a class="reference internal" href="#heading-2" id="id4">Heading 2</a><ul>
+<li><a class="reference internal" href="#heading-3" id="id5">Heading 3</a><ul>
+<li><a class="reference internal" href="#heading-4" id="id6">Heading 4</a></li>
 </ul>
 </li>
 </ul>
@@ -433,10 +415,38 @@ Some code.
 </li>
 </ul>
 </div>
-<div class="section" id="h1-1">
-<h1><a class="toc-backref" href="#id1">H1.1</a></h1>
+<div class="section" id="heading-1-0">
+<h1><a class="toc-backref" href="#id1">Heading 1.0</a></h1>
+<ol class="arabic simple">
+<li>Test internal link where target is created elsewhere in
+this document: <a class="reference internal" href="#internal-link-1">internal link 1</a></li>
+<li>Test internal link where target is created just before
+a section heading: <a class="reference internal" href="#internal-link-2">internal link 2</a> (I think this doesn't
+work because you get section targets automatically based
+on section name.)</li>
+<li>Test internal link to section heading text as the target
+(without having explicitly created a target there):
+<a class="reference internal" href="#heading-4">Heading 4</a></li>
+<li>Test <em>external</em> link: <a class="reference external" href="https://status.aws.amazon.com/">AWS Service Health Dashboard</a></li>
+<li>Test external link with fold-in form <a class="reference external" href="http://docutils.sourceforge.net/rst.html">reStructuredText</a>
+work?</li>
+</ol>
+</div>
+<div class="section" id="heading-1-1">
+<h1><a class="toc-backref" href="#id2">Heading 1.1</a></h1>
 <p>Some text and an <tt class="docutils literal">inline literal</tt>.</p>
-<p id="internal-link1">The internal link &quot;internal link1&quot; should take you here.</p>
+<pre class="code literal-block">
+Some code.
+</pre>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore
+magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in
+voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum.</p>
+<p id="internal-link-1">The internal link &quot;internal link 1&quot; should take you here.</p>
 <ul class="simple">
 <li>a</li>
 <li>b</li>
@@ -448,8 +458,9 @@ Some code.
 <li>c</li>
 </ol>
 </div>
-<div class="section" id="h1-2">
-<h1><a class="toc-backref" href="#id2">H1.2</a></h1>
+<div class="section" id="heading-1-2">
+<span id="internal-link-2"></span><h1><a class="toc-backref" href="#id3">Heading 1.2</a></h1>
+<p>The link &quot;internal link 2&quot; should take you here.</p>
 <p>Here is a table.</p>
 <table border="1" class="docutils">
 <colgroup>
@@ -474,18 +485,98 @@ Some code.
 </tr>
 </tbody>
 </table>
-<div class="section" id="h2">
-<h2><a class="toc-backref" href="#id3">H2</a></h2>
-<div class="section" id="h3">
-<h3><a class="toc-backref" href="#id4">H3</a></h3>
-<p>The internal link &quot;link to h3&quot; should take you here.</p>
-<p id="link-to-h3">Some text in the H3 section.</p>
-<div class="section" id="h4">
-<h4><a class="toc-backref" href="#id5">H4</a></h4>
-<p>Try to link to <a class="reference external" href="other.rst">other.rst</a></p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore
+magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in
+voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum.</p>
+<div class="section" id="heading-2">
+<h2><a class="toc-backref" href="#id4">Heading 2</a></h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore
+magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in
+voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum.</p>
+<div class="section" id="heading-3">
+<h3><a class="toc-backref" href="#id5">Heading 3</a></h3>
+<p>Some text in the H3 section.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore
+magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in
+voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore
+magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in
+voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum.</p>
+<div class="section" id="heading-4">
+<h4><a class="toc-backref" href="#id6">Heading 4</a></h4>
+<p>Try to link to another file in the same folder as this
+file: <a class="reference external" href="other.rst">other.rst</a></p>
 <p>Try to link to <a class="reference external" href="methods/method1.rst">method1</a>, which is in <tt class="docutils literal">methods/method1.rst</tt>.</p>
 <p>Try to include an image:</p>
 <img alt="test.jpg" src="test.jpg" />
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore
+magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in
+voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore
+magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in
+voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore
+magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in
+voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore
+magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in
+voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore
+magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in
+voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore
+magna aliqua. Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in
+voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa
+qui officia deserunt mollit anim id est laborum.</p>
 <!-- Internal links: -->
 <!-- External links: -->
 </div>
@@ -496,7 +587,7 @@ Some code.
 <div class="footer">
 <hr class="footer" />
 <a class="reference external" href="test.rst">View document source</a>.
-Generated on: 2019-07-19 11:23 UTC.
+Generated on: 2019-07-23 14:11 UTC.
 Generated by <a class="reference external" href="http://docutils.sourceforge.net/">Docutils</a> from <a class="reference external" href="http://docutils.sourceforge.net/rst.html">reStructuredText</a> source.
 
 </div>
