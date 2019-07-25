@@ -50,13 +50,14 @@ Heading 1.0
    this document: `internal link 1`_
 
 #. Test internal link where target is created just before
-   a section heading: `internal link 2`_ (I think this doesn't
-   work because you get section targets automatically based
-   on section name.)
+   a section heading: `internal link 2`_
 
 #. Test internal link to section heading text as the target
    (without having explicitly created a target there):
    `Heading 4`_
+
+#. Test using `alternative text<#heading-4>`_ in a link.
+   (The previous link should take you to Heading 4.
 
 #. Test *external* link: `AWS Service Health Dashboard`_
 
