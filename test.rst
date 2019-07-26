@@ -57,7 +57,7 @@ Heading 1.0
    `Heading 4`_
 
 #. Test using `alternative text <#heading-4>`_ in a link.
-   (The previous link should take you to Heading 4.
+   (The previous link should take you to Heading 4.)
 
 #. Test *external* link: `AWS Service Health Dashboard`_
 
